@@ -48,8 +48,8 @@ namespace oneBlockWeb {
             //});
 
             //数据库配置
-            //var connection = "Filename=App_Data/blockPlayDB.db"; //正式发布
-            var connection = "Filename=../../../App_Data/blockPlayDB.db"; //debug
+            var connection = "Filename=App_Data/blockPlayDB.db"; //正式发布
+            //var connection = "Filename=../../../App_Data/blockPlayDB.db"; //debug
             services.AddDbContext<blockPlayDBContext>(options => options.UseSqlite(connection));
 
             //注入用户相关操作对象
